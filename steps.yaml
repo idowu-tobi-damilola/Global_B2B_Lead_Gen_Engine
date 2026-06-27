@@ -1,0 +1,36 @@
+# Step 1: Install Python 3.11+
+python --version  # Should show 3.11 or higher
+
+# Step 2: Create project folder
+mkdir b2b_scraper
+cd b2b_scraper
+
+# Step 3: Create virtual environment
+python -m venv venv
+
+# Activate it:
+# Windows:
+venv\Scripts\activate
+# Mac/Linux:
+source venv/bin/activate
+
+# Step 4: Install Redis (if on Windows, use Docker or WSL)
+# Option A - Docker:
+docker run -d -p 6379:6379 redis
+
+# Option B - Direct install:
+# Mac: brew install redis && brew services start redis
+# Linux: sudo apt install redis-server
+# Windows: Use WSL2 or Docker
+
+# Step 5: Install Python dependencies
+WHAT'S INSTALLED:
+curl_cffi (for bypassing Cloudflare)
+
+redis (for deduplication)
+
+pyairtable (for uploading leads)
+
+requests (for notifications)
+
+python-dotenv (for environment variables)

@@ -1,0 +1,17 @@
+# Secrets and API Keys
+.env
+credentials.json
+*.json
+*.csv
+
+# Python virtual environment
+venv/
+__pycache__/
+
+# Operating System files
+.DS_Store
+Thumbs.db
+
+# Development logs
+*.log
+*.pyc
